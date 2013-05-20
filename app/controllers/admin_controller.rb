@@ -12,7 +12,7 @@ before_filter {
     render :admin_login
   end
 
-  
+  #Checking to see if user is in the database for login.
   def check_login
 
     if User.where({ :username => params[:username] }).first
