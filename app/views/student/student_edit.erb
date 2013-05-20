@@ -1,0 +1,15 @@
+<h3>Edit Student Details & Mileage</h3>
+ <p><font color="red">*</font><i>denotes required field</i>
+    <form method="POST" action="<%= "/student/" + @show_student.id.to_s%>">
+    
+    <table border="0" width="80%">
+        <tr>    
+        <td align="left" valign="top"><%= render :partial => "student_edit_form" %></td>
+        <td align="left" valign="top"><%= render :partial => "student_mileage_form" %></td>
+        <td align="left" valign="top"><%= render :partial => "student_award_form" %></td>
+        </tr>
+    </table>    
+
+    <br>
+        <p> <button>Update Student</button>
+    </form>

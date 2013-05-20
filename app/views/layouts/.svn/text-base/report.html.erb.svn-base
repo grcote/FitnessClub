@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mesa Fitness Club - 2013</title>
+  <% for flash_type in [:error, :success] %>
+    <% if flash[flash_type] %>
+        <div class="flash flash-<%= flash_type %>">
+            <%= flash[flash_type] %>
+        </div>
+    <% end %>
+  <% end %>
+
+  <a href="/admin"><img src="/images/fc_logo.jpg" alt="Fitness Club Logo"></a>
+  <h1>Reports</h1>
+  
+  <div class="small-text">
+    <a href="/admin">Admin Home</a> | 
+    <a href="/family">View/Edit Families</a> | 
+    <a href="/family/new">Add a Family</a></a> |
+    <a href="/student">View/Edit Students</a> | 
+    <a href="/student/new">Add a Student</a>
+  </div>
+  
+  <hr>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

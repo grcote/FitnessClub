@@ -1,0 +1,14 @@
+<h3>Edit Family Details and Registrations</h3>
+ <p><font color="red">*</font><i>denotes required field</i>
+    <form method="POST" action="<%= "/family/" + @show_family.id.to_s%>">
+    
+    <table border="0" width="65%">    
+        <tr>
+            <td align="left"  valign="top"><%= render :partial => "family_edit_form" %></td>
+            <td align="left" valign="top"><%= render :partial => "family_registration_form" %></td>
+        </tr>
+    </table>
+
+    <p><button>Update Family</button>
+
+    </form>

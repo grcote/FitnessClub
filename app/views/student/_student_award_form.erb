@@ -1,0 +1,73 @@
+<h4>Has student been awarded?</h4>
+
+<table border="0">
+    <td colspan="2">
+    
+    <% if @show_student.award.water_bottle == true %>
+        <input type="checkbox" name="water_bottle" checked>Water Bottle&nbsp;&nbsp;&nbsp;
+    <% else %>
+        <input type="checkbox" name="water_bottle">Water Bottle&nbsp;&nbsp;&nbsp;
+    <% end %>
+    <br>
+    <% if @show_student.award.race_hat == true %>
+        <input type="checkbox" name="race_hat" checked>Race Hat&nbsp;&nbsp;&nbsp;
+    <% else %>
+        <input type="checkbox" name="race_hat">Race Hat&nbsp;&nbsp;&nbsp;
+    <% end %>
+    <br>
+    <% if @show_student.award.green_star == true %>
+        <input type="checkbox" name="green_star" checked>Green Star&nbsp;&nbsp;&nbsp;
+    <% else %>
+        <input type="checkbox" name="green_star">Green Star&nbsp;&nbsp;&nbsp;
+    <% end %>
+    <br>
+    <% if @show_student.award.red_star == true %>
+        <input type="checkbox" name="red_star" checked>Red Star&nbsp;&nbsp;&nbsp;
+    <% else %>
+        <input type="checkbox" name="red_star">Red Star&nbsp;&nbsp;&nbsp;
+    <% end %>
+    <br>
+    <% if @show_student.award.blue_star == true %>
+        <input type="checkbox" name="blue_star" checked>Blue Star&nbsp;&nbsp;&nbsp;
+    <% else %>
+        <input type="checkbox" name="blue_star">Blue Star&nbsp;&nbsp;&nbsp;
+    <% end %>
+    <br>
+    <% if @show_student.award.gold_star == true %>
+        <input type="checkbox" name="gold_star" checked>Gold Star&nbsp;&nbsp;&nbsp;
+    <% else %>
+        <input type="checkbox" name="gold_star">Gold Star&nbsp;&nbsp;&nbsp;
+    <% end %>
+    <br>
+    <% if @show_student.award.shoe == true %>
+        <input type="checkbox" name="shoe" checked>Shoe&nbsp;&nbsp;&nbsp;
+    <% else %>
+        <input type="checkbox" name="shoe">Shoe
+    <% end %>
+    <br>
+    <% if @show_student.award.rising_star == true %>
+        <input type="checkbox" name="rising_star" checked>Rising Star&nbsp;&nbsp;&nbsp;
+    <% else %>
+        <input type="checkbox" name="rising_star">Rising Star&nbsp;&nbsp;&nbsp;
+    <% end %>
+    <br>
+    <% if @show_student.award.excellence == true %>
+        <input type="checkbox" name="excellence" checked>Excellence&nbsp;&nbsp;&nbsp;
+    <% else %>
+        <input type="checkbox" name="excellence">Excellence&nbsp;&nbsp;&nbsp;
+    <% end %>
+    <br>
+    <% if @show_student.award.number_1 == true %>
+        <input type="checkbox" name="number_1" checked>Number 1&nbsp;&nbsp;&nbsp;
+    <% else %>
+        <input type="checkbox" name="number_1">Number 1&nbsp;&nbsp;&nbsp;
+    <% end %>
+    <br><br>
+    <% if @show_student.award.bolder_boulder == true %>
+        <input type="checkbox" name="bolder_boulder" checked>Bolder Boulder registration?
+    <% else %>
+        <input type="checkbox" name="bolder_boulder">Bolder Boulder registration?
+    <% end %>
+    
+    </td>
+</table>

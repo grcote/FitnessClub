@@ -1,0 +1,52 @@
+      <p><font color="red">*</font>Student - First Name
+      <br><input type="text" name="student_first_name"
+            value="<%= @show_student.student_first_name %>"/>
+
+      <p><font color="red">*</font>Student - Last Name
+      <br><input type="text" name="student_last_name"
+            value="<%= @show_student.student_last_name %>"/>
+
+      <p><font color="red">*</font>Family <i>(by parent name)</i><br>
+  <select name = "family_id" value = ""><option value="" > </option>
+    <% for family in @families %>         
+    
+      <% parent_name = family.parent_last_name + ", " + family.parent_first_name %>
+    
+      <% if @show_student.family_id == family.id %>
+        <option value="<%= family.id %>" selected><%= parent_name %></option>
+      <% else %>
+        <option value="<%= family.id %>"><%= parent_name %></option>
+      <% end %>
+    
+    <% end %>
+  </select>
+        
+ <p><font color="red">*</font>Teacher <i>(by grade-name code)</i><br>
+  <select name = "teacher_id" value = ""><option value="" > </option>
+    <% for teacher in @teachers %>         
+    
+      <% teacher_code = teacher.grade + "-" + teacher.letter_code %>
+    
+      <% if @show_student.teacher_id == teacher.id %>
+        <option value="<%= teacher.id %>" selected><%= teacher_code %></option>
+      <% else %>
+        <option value="<%= teacher.id %>"><%= teacher_code %></option>
+      <% end %>
+    
+    <% end %>
+  </select>
+ 
+  <p><font color="red">*</font>Student Coach<br>
+  <select name = "coach_id" value = ""><option value="" > </option>
+    <% for coach in @coaches %>         
+    
+      <% coach_name = coach.coach_last_name + ", " + coach.coach_first_name %>
+    
+      <% if @show_student.coach_id == coach.id %>
+        <option value="<%= coach.id %>" selected><%= coach_name %></option>
+      <% else %>
+        <option value="<%= coach.id %>"><%= coach_name %></option>
+      <% end %>
+    
+    <% end %>
+  </select>

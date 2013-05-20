@@ -1,0 +1,205 @@
+<h3>Awards Earned/Awarded by Student</h3>
+<br>
+
+<table border="1" width="95%">
+    
+    <tr>
+      <th>Student Name</th>
+      <th colspan="2">Water Bottle</th>
+      <th colspan="2">Race Hat</th>
+      <th colspan="2">Green Star</th>
+      <th colspan="2">Red Star</th>
+      <th colspan="2">Blue Star</th>
+      <th colspan="2">Gold Star</th>
+      <th colspan="2">Shoe
+      <th colspan="2">Rising Star</th>
+      <th colspan="2">Excellence</th>
+      <th colspan="2">Number 1</th>
+    </tr>    
+
+    <tr>
+    <td></td>    
+    <% for c in 1..10 %>
+        <td align="center"><font class="small-text">Earned</font></td>
+        <td align="center"><font class="small-text">Awarded</font></td>
+    <% end %>
+    </tr>
+    
+    <%for student in @students %>
+
+      <% student_name = student.student_last_name + ", " + student.student_first_name %>
+
+      <tr>
+        <td><%= student_name %></td>
+        
+        <td align="center">
+            <% rule_check = AwardRule.where({ :award => "water_bottle"}).first %>
+            <% if student.total_mileage >=  rule_check.rule %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td>
+        <td align="center">
+            <% if student.award.water_bottle == true %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td>
+
+        <td align="center">
+            <% rule_check = AwardRule.where({ :award => "race_hat"}).first %>
+            <% if student.total_mileage >=  rule_check.rule %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td>
+        <td align="center">
+            <% if student.award.race_hat == true %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td>      
+      
+        <td align="center">
+            <% rule_check = AwardRule.where({ :award => "green_star"}).first %>
+            <% if student.total_mileage >=  rule_check.rule %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td>
+        <td align="center">
+            <% if student.award.green_star == true %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td> 
+
+        <td align="center">
+            <% rule_check = AwardRule.where({ :award => "red_star"}).first %>
+            <% if student.total_mileage >=  rule_check.rule %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td>
+        <td align="center">
+            <% if student.award.red_star == true %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td> 
+
+        <td align="center">
+            <% rule_check = AwardRule.where({ :award => "blue_star"}).first %>
+            <% if student.total_mileage >=  rule_check.rule %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td>
+        <td align="center">
+            <% if student.award.blue_star == true %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td> 
+
+        <td align="center">
+            <% rule_check = AwardRule.where({ :award => "gold_star"}).first %>
+            <% if student.total_mileage >=  rule_check.rule %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td>
+        <td align="center">
+            <% if student.award.gold_star == true %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td> 
+
+        <td align="center">
+            <% if student.award.non_stop_2 == true %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td>
+        <td align="center">
+            <% if student.award.shoe == true %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td> 
+
+        <td align="center">
+            <% if student.award.non_stop_4 == true %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td>
+        <td align="center">
+            <% if student.award.rising_star == true %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td>
+
+        <td align="center">
+            <% if student.award.non_stop_6 == true %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td>
+        <td align="center">
+            <% if student.award.excellence == true %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td>
+      
+        <% attendance_records = MileageLog.where({ :student_id => student.id }) %>
+        <% for attendance_record in attendance_records %>
+          <% if attendance_record.attendance_monday == true && attendance_record.attendance_wednesday == true %>
+            <% perfect_attendance = true %>
+          <% else %>
+            <% perfect_attendance = false %>
+            <% break %>
+          <% end %>
+        <% end %>
+
+        <td align="center">
+            <% if student.award.number_1 == true %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td>
+        <td align="center">
+            <% if perfect_attendance == true %>
+              X
+            <% else %>
+              
+            <% end %>
+        </td>
+
+
+      </tr>
+    <% end %>
+
+</table>

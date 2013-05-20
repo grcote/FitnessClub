@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1136/trunk/gerardcote/FitnessClub/app/views/family
+END
+family_index.erb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1234/trunk/gerardcote/FitnessClub/app/views/family/family_index.erb
+END
+_family_edit_form.erb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1114/trunk/gerardcote/FitnessClub/app/views/family/_family_edit_form.erb
+END
+family_new.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1136/trunk/gerardcote/FitnessClub/app/views/family/family_new.erb
+END
+_family_new_form.erb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1136/trunk/gerardcote/FitnessClub/app/views/family/_family_new_form.erb
+END
+_family_registration_form.erb
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1136/trunk/gerardcote/FitnessClub/app/views/family/_family_registration_form.erb
+END
+family_edit.erb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1136/trunk/gerardcote/FitnessClub/app/views/family/family_edit.erb
+END

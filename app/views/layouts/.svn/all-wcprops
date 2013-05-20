@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1141/trunk/gerardcote/FitnessClub/app/views/layouts
+END
+student.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1165/trunk/gerardcote/FitnessClub/app/views/layouts/student.html.erb
+END
+admin.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1175/trunk/gerardcote/FitnessClub/app/views/layouts/admin.html.erb
+END
+report.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1165/trunk/gerardcote/FitnessClub/app/views/layouts/report.html.erb
+END
+family.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1233/trunk/gerardcote/FitnessClub/app/views/layouts/family.html.erb
+END
+application.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1025/trunk/gerardcote/FitnessClub/app/views/layouts/application.html.erb
+END

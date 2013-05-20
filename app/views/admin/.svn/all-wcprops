@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1135/trunk/gerardcote/FitnessClub/app/views/admin
+END
+admin_index.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1154/trunk/gerardcote/FitnessClub/app/views/admin/admin_index.erb
+END
+admin_login.erb
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1154/trunk/gerardcote/FitnessClub/app/views/admin/admin_login.erb
+END

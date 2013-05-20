@@ -1,0 +1,72 @@
+<h3>Registrations by Family</h3>
+<br>
+
+<table border="1" width="95%">
+
+    <tr>
+        <th rowspan="2">Parent Name</th>
+        <th rowspan="2">Registered<br>Student(s)</th>
+        <th rowspan="2">T-Shirt(s)</th>
+        <th colspan="3">Pasta Pigout</th>
+        <th colspan="3">Form Signed/Complete?</th>
+    </tr>
+
+        <tr>
+        <td align="center"><font class="small-text"></font><i>Members<i></td>
+        <td align="center"><font class="small-text"></font><i>Non-Members<i></td>
+        <td align="center"><font class="small-text"></font><i>Children</i></td>
+        <td align="center"><font class="small-text"></font><i>Permission</i></td>
+        <td align="center"><font class="small-text"></font><i>Conduct</i></td>
+        <td align="center"><font class="small-text"></font><i>Field Trip</i></td>
+    </tr>
+
+  <% for family in @families %>
+
+    <tr>
+        <td><%= family.parent_last_name + ", " + family.parent_first_name %></td>
+        <td align="center"><%= family.registration.registration_num %></td>
+        <td align="center"><%= family.registration.tshirt_num %></td>
+        <td align="center"><%= family.registration.pp_member_num %></td>
+        <td align="center"><%= family.registration.pp_nonmember_num %></td>
+        <td align="center"><%= family.registration.pp_child_num %></td>
+        <td align="center">
+          <% if family.signature == true %>
+            X
+          <% else %>
+
+          <% end %>
+        </td>
+        <td align="center">
+          <% if family.registration.conduct_code == true %>
+            X
+          <% else %>
+
+          <% end %>
+        </td>
+                <td align="center">
+          <% if family.registration.field_trip_form == true %>
+            X
+          <% else %>
+
+          <% end %>
+        </td> 
+    </tr>
+
+  <% end %>
+
+
+</table>  
+
+
+<!--
+
+
+    attr_accessible(:registration_num)
+    attr_accessible(:tshirt_num)
+    attr_accessible(:pp_member_num)
+    attr_accessible(:pp_nonmember_num)
+    attr_accessible(:pp_child_num)
+    attr_accessible(:conduct_code)
+    attr_accessible(:field_trip_form)
+    attr_accessible(:family_id)
+-->

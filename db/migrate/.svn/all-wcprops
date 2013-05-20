@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1123/trunk/gerardcote/FitnessClub/db/migrate
+END
+20130320091000_create_mileage_logs.rb
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1121/trunk/gerardcote/FitnessClub/db/migrate/20130320091000_create_mileage_logs.rb
+END
+20130320080900_create_awards.rb
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1121/trunk/gerardcote/FitnessClub/db/migrate/20130320080900_create_awards.rb
+END
+20130320150500_create_other_tables.rb
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1069/trunk/gerardcote/FitnessClub/db/migrate/20130320150500_create_other_tables.rb
+END
+20130319112300_create_students.rb
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1055/trunk/gerardcote/FitnessClub/db/migrate/20130319112300_create_students.rb
+END
+20130318121900_create_families.rb
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1025/trunk/gerardcote/FitnessClub/db/migrate/20130318121900_create_families.rb
+END
+20130320145800_create_registrations.rb
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1121/trunk/gerardcote/FitnessClub/db/migrate/20130320145800_create_registrations.rb
+END
+20130323075800_create_award_rules.rb
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1123/trunk/gerardcote/FitnessClub/db/migrate/20130323075800_create_award_rules.rb
+END
+20130325112500_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1154/trunk/gerardcote/FitnessClub/db/migrate/20130325112500_create_users.rb
+END

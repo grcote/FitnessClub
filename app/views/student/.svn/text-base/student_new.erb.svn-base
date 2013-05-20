@@ -1,0 +1,7 @@
+<h3>Add Student Details</h3>
+ <p><font color="red">*</font><i>denotes required field</i>
+    <form method="POST" action="/student">
+        
+        <%= render :partial => "student_new_form" %>
+
+    </form>

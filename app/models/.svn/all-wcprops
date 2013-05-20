@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1123/trunk/gerardcote/FitnessClub/app/models
+END
+coach.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1070/trunk/gerardcote/FitnessClub/app/models/coach.rb
+END
+award.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1121/trunk/gerardcote/FitnessClub/app/models/award.rb
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1154/trunk/gerardcote/FitnessClub/app/models/user.rb
+END
+family.rb
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1069/trunk/gerardcote/FitnessClub/app/models/family.rb
+END
+price.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1070/trunk/gerardcote/FitnessClub/app/models/price.rb
+END
+.gitkeep
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1007/trunk/gerardcote/FitnessClub/app/models/.gitkeep
+END
+mileage_log.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1121/trunk/gerardcote/FitnessClub/app/models/mileage_log.rb
+END
+award_rule.rb
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1123/trunk/gerardcote/FitnessClub/app/models/award_rule.rb
+END
+student.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1147/trunk/gerardcote/FitnessClub/app/models/student.rb
+END
+registration.rb
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1121/trunk/gerardcote/FitnessClub/app/models/registration.rb
+END
+teacher.rb
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1070/trunk/gerardcote/FitnessClub/app/models/teacher.rb
+END
+week.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1070/trunk/gerardcote/FitnessClub/app/models/week.rb
+END

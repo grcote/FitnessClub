@@ -1,0 +1,20 @@
+body { font-family:Verdana, Geneva, sans-serif;font-size:0.75em;} 
+h1 {font-family:Verdana, Geneva, sans-serif; font-size:2.5em;} /* 40px/16=2.5em */
+h2 {font-family:Verdana, Geneva, sans-serif; font-size:1.875em;} /* 30px/16=1.875em */
+p {font-family:Verdana, Geneva, sans-serif; font-size:0.875em;} /* 14px/16=0.875em */
+.small-text {
+font-family:Verdana, Geneva, sans-serif;
+font-size:0.65em;
+} /* 14px/16=0.875em */
+.flash-error {
+background-color: #F6D8CE;
+border: 1px #b94a48 solid;
+color: #b94a48;
+padding: 10px;
+}
+.flash-success {
+background-color: #A9E2F3;
+border: 1px #5882FA solid;
+color: #5882FA;
+padding: 10px;
+}

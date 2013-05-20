@@ -1,0 +1,47 @@
+<br>
+
+<table border="1" width="600">
+    <tr>
+        <th>Family Data</th>
+        <th>Student Data</th>
+    </tr>
+
+    <tr>
+        <td><a href="/family">View/Edit Families</a></td>
+        <td><a href="/student">View/Edit Students</a></td>
+    </tr>
+
+    <tr>
+        <td><a href="/family/new">Add a Family</a></a></td>
+        <td><a href="/student/new">Add a Student</a></td>
+    </tr>
+
+</table>
+
+<br><br>
+
+<table border="1" width="600">
+    <tr>
+        <th>Reports</th>
+    </tr>
+
+    <tr>
+        <td><a href="/report/total_mileage">Total Mileage by Student</a></td>
+    </tr>
+
+    <tr>
+        <td><a href="/report/student_awards">Awards by Student</a></td>
+    </tr>
+
+    <tr>
+        <td><a href="/report/family_registrations">Registrations by Family</a></td>
+    </tr>
+
+</table>
+
+<form method="post" action="<%= admin_logout_path %>">
+
+<br><br>
+      <button>Logout</button>
+
+</form>

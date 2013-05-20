@@ -1,0 +1,31 @@
+<h3>Student Details</h3>
+<p><i>Click links at right to edit/delete a student</i>
+<br><br>
+
+<table border="1" width="800">
+    <tr>
+        <th>Student Last</th>
+        <th>Student First</th>
+        <th>Family/Parent</th>
+        <th>Teacher</th>
+        <th>Coach</th>
+        <th></th>
+        <th></th>
+    </tr>
+
+    <% for student in @students %>
+    <% parent_name = student.family.parent_last_name + ", " + student.family.parent_first_name %>
+    <% teacher_code = student.teacher.grade + "-" + student.teacher.letter_code %>
+    <% coach_name = student.coach.coach_last_name + ", " + student.coach.coach_first_name %>
+    <tr>
+    <td><%= student.student_last_name %></td>
+    <td><%= student.student_first_name %></td>
+    <td><%= parent_name %></td>
+    <td><%= teacher_code %></td>
+    <td><%= coach_name %></td>
+    <td align="center"><a href="<%= "/student/" + student.id.to_s %>" >Edit</a></td>
+    <td align="center"><a href="<%= "/student/delete/" + student.id.to_s %>" onclick="return confirm('Do you wish to delete this students and its associated mileage log?')">Delete</a></td>
+    </tr>
+
+    <% end %>
+</table>

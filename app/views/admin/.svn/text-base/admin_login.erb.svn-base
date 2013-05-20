@@ -1,0 +1,13 @@
+<h2>Login</h2>
+    
+<form method="post" action="<%= admin_check_login_path %>">
+
+    <p>
+      Username <input type="text" name="username" value="">
+      <br>
+      Password <input type="password" name="password" value="">
+      <br>
+      <button>Login</button>
+    </p>
+
+</form>

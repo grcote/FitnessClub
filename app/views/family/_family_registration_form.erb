@@ -1,0 +1,40 @@
+<h4><i>Registrations</i></h4>
+
+    <p>Total Family Registrants
+    <input type="text" name="registration_num" size="2" value="<%= @show_family.registration.registration_num %>">
+     &nbsp;&nbsp;
+
+    Total T-Shirts
+    <input type="text" name="tshirt_num" size="2" value="<%= @show_family.registration.tshirt_num %>">
+     &nbsp;&nbsp;
+
+    <br><br>
+
+    <b>Pasta Pig-Out:</b>&nbsp;&nbsp;
+
+    <i>Members</i>
+    <input type="text" name="pp_member_num" size="2" value="<%= @show_family.registration.pp_member_num %>">
+     &nbsp;
+
+    <i>Non-Members</i>
+    <input type="text" name="pp_nonmember_num" size="2" value="<%= @show_family.registration.pp_nonmember_num %>">
+     &nbsp;
+
+    <i>Children</i>
+    <input type="text" name="pp_child_num" size="2" value="<%= @show_family.registration.pp_child_num %>">
+     &nbsp;
+
+    <br><br><br>
+    <% if @show_family.registration.conduct_code == true %>
+        <input type="checkbox" name="conduct_code" checked>Conduct Code Signed? &nbsp;&nbsp;&nbsp;
+    <% else %>
+        <input type="checkbox" name="conduct_code">Conduct Code Signed? &nbsp;&nbsp;&nbsp;
+    <% end %>
+
+    <% if @show_family.registration.field_trip_form == true %>
+        <input type="checkbox" name="field_trip_form" checked>Field Trip form Signed? &nbsp;&nbsp;&nbsp;
+    <% else %>
+        <input type="checkbox" name="field_trip_form">Field Trip form Signed? &nbsp;&nbsp;&nbsp;
+    <% end %>
+
+

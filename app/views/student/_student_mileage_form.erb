@@ -1,0 +1,71 @@
+<h4>Student Mileage Record</h4>
+
+<table border="1" width="550">
+    <tr>
+        <th rowspan="2">Week</th>
+        <th rowspan="2">Week Dates</th>
+        <th colspan="2">Monday</th>
+        <th colspan="2">Wednesday</th>
+        <th rowspan="2">Rest of<br>Week Miles</th>
+    </tr>
+
+    <tr>
+        <td align ="center"><font class="small-text">Attend?</font></td>
+        <td align ="center"><font class="small-text">Miles</font></td>
+        <td align ="center"><font class="small-text">Attend?</font></td>
+        <td align ="center"><font class="small-text">Miles</font></td>
+    </tr>
+
+    <% for mileage_log in @mileage_logs %>
+        <% week_identifier = mileage_log.week.week_number %>
+        <tr>
+            <td><%= mileage_log.week.week_number %></td>
+            <td><%= mileage_log.week.week_dates %></td>
+            
+            <td align="center">
+              <% if mileage_log.attendance_monday == true %>
+                <input type="checkbox" name="<%= "attendance_monday_" + week_identifier %>" checked>
+              <% else %>
+                <input type="checkbox" name="<%= "attendance_monday_" + week_identifier %>">
+              <% end %>
+            </td>
+            
+            <td align="center"><input type="text" name="<%= "miles_monday_" + week_identifier %>" size="4" value="<%= mileage_log.miles_monday %>"></td>
+
+            <td align="center">
+              <% if mileage_log.attendance_wednesday == true %>
+                <input type="checkbox" name="<%= "attendance_wednesday_" + week_identifier %>" checked>
+              <% else %>
+                <input type="checkbox" name="<%= "attendance_wednesday_" + week_identifier %>">
+              <% end %>
+            </td>
+
+            <td align="center"><input type="text" name="<%= "miles_wednesday_" + week_identifier %>" size="4" value="<%= mileage_log.miles_wednesday %>"></td>
+            
+            <td align="center"><input type="text" name="<%= "miles_rest_of_week_" + week_identifier %>" size="4" value="<%= mileage_log.miles_rest_of_week %>"></td>
+        </tr>
+    <% end %>
+ 
+</table>
+
+    <br><b>Student has done:</b>&nbsp;&nbsp;
+    <% if @show_student.award.non_stop_2 == true %>
+        <input type="checkbox" name="non_stop_2" checked>2 Miles Non-Stop &nbsp;
+    <% else %>
+        <input type="checkbox" name="non_stop_2">2 Miles Non-Stop &nbsp;
+    <% end %>
+    
+    <% if @show_student.award.non_stop_4 == true %>
+        <input type="checkbox" name="non_stop_4" checked>4 Miles Non-Stop &nbsp;
+    <% else %>
+        <input type="checkbox" name="non_stop_4">4 Miles Non-Stop &nbsp;
+    <% end %>
+    
+    <% if @show_student.award.non_stop_6 == true %>
+        <input type="checkbox" name="non_stop_6" checked>6 Miles Non-Stop &nbsp;
+    <% else %>
+        <input type="checkbox" name="non_stop_6">6 Miles Non-Stop &nbsp;
+    <% end %>
+
+
+

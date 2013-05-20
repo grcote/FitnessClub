@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1136/trunk/gerardcote/FitnessClub/app/controllers
+END
+report_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1147/trunk/gerardcote/FitnessClub/app/controllers/report_controller.rb
+END
+family_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1233/trunk/gerardcote/FitnessClub/app/controllers/family_controller.rb
+END
+application_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1154/trunk/gerardcote/FitnessClub/app/controllers/application_controller.rb
+END
+student_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1136/trunk/gerardcote/FitnessClub/app/controllers/student_controller.rb
+END
+admin_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/davinci-coders-rails-winter-2013/!svn/ver/1154/trunk/gerardcote/FitnessClub/app/controllers/admin_controller.rb
+END

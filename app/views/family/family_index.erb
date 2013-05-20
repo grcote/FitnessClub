@@ -1,0 +1,45 @@
+<h3>Family Details</h3>
+<p><i>Click links at right to edit/delete a family</i>
+<br><br>
+
+<table border="1" width="95%"> 
+    <tr>
+        <th>Parent Last</th>
+        <th>Parent First</th>
+        <th>Chaperone First</th>
+        <th>Chaperone Last</th>
+        <th>Home Phone</th>
+        <th>Cell Phone</th>
+        <th>Work Phone</th>
+        <th>Email</th>
+        <th>Signature</th>
+        <th></th>
+        <th></th>
+    </tr>
+
+    <% for family in @families %>
+
+    <tr>
+    <td><%= family.parent_last_name %></td>
+    <td><%= family.parent_first_name %></td>
+    <td><%= family.chaperone_first_name %></td>
+    <td><%= family.chaperone_last_name %></td>
+    <td align="center"><%= family.home_phone %></td>
+    <td align="center"><%= family.cell_phone %></td>
+    <td align="center"><%= family.work_phone %></td>
+    <td><%= family.email %></td>
+    <td align="center">
+        <% if family.signature == true %>
+              X
+            <% else %>
+              
+            <% end %>
+    </td>
+    <td align="center"><a href="<%= "/family/" + family.id.to_s %>" >Edit</a></td>
+    <td align="center"><a href="<%= "/family/delete/" + family.id.to_s %>" onclick="return confirm('Do you wish to delete this family and its associated students?')">Delete</a></td>
+
+    </tr>
+
+    <% end %>
+
+</table>  
